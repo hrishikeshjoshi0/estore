@@ -14,6 +14,7 @@ class UrlMappings {
 		"/about"(view:"/about")
 		"/contact"(view:"/contact")
 		"/blog"(view:"/blog")
+		"/category"(view:"/category")
 		"500"(view:'/error')
 	}
 }
