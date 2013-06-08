@@ -1,0 +1,101 @@
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider_carousel a:active,
+.flex-container a:focus,
+.flexslider_carousel a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider_carousel {margin: 0; padding: 0;}
+.flexslider_carousel .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider_carousel .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider_carousel {margin: 0 0 0px; background: #fff; position: relative; zoom: 1;}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider_carousel .slides {zoom: 1;}
+
+.carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.flexslider_carousel .flex-direction-nav {*height: 0;}
+.flexslider_carousel .flex-direction-nav a {
+ width: 20px; height: 20px; margin:0px; display: block; 
+ background-image: url("../img/carousel-arrow.png");
+ background-position: 0 0;
+ background-repeat:no-repeat;
+ background-color:#000;
+ background-color:#000;
+ position: absolute; top: -40px; cursor: pointer; text-indent: -9999px; opacity: 1; -webkit-transition: all .3s ease;
+}
+
+.flexslider_carousel .flex-direction-nav .flex-next {background-position: -19px 1px;opacity: 1; right: 0px; }
+.flexslider_carousel .flex-direction-nav .flex-prev { right: 25px;opacity: 1;background-position:-1px 1px;left:auto;}
+.flexslider_carousel:hover .flex-next {opacity: 0.8;}
+.flexslider_carousel:hover .flex-prev {opacity: 0.8;}
+.flexslider_carousel:hover .flex-next:hover, .flexslider_carousel:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled {opacity: 0.3!important; filter:alpha(opacity=10); cursor: default;}
+
+.flex-viewport .slides img
+{ width:100%;display:block;}
+
+
+.flex-caption {
+    background: #ccc;
+    background: rgba(0, 0, 0, 0.2);
+    font-size:14px;
+    bottom: 0;
+    color: #000;
+    margin: 0;
+    padding: 10px 15px;
+    position: relative;
+}
+
+ 
+/* Control Nav */
+.flexslider_carousel .flex-control-nav {position:relative; /*position: absolute; bottom: -40px; */text-align: right;margin-top: -25px;margin-right:15px}
+.flexslider_carousel .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flexslider_carousel .flex-control-paging li a {width: 40px; height: 8px; display: block;  background-color: #333;background-color: rgba(0, 0, 0, 0.8); cursor: pointer; text-indent: 9999px;}
+.flexslider_carousel .flex-control-paging li a:hover { background: #9D2053; background-color: rgba(157,32,83,0.8); }
+.flexslider_carousel .flex-control-paging li a.flex-active { background-color: #7A1E48; background-color: rgba(122,30,72, 0.9);cursor: default; }
+
+.flexslider_carousel .flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flexslider_carousel .flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flexslider_carousel .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flexslider_carousel .flex-control-thumbs img:hover {opacity: 1;}
+.flexslider_carousel .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+  .flexslider_carousel .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+  .flexslider_carousel .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}
