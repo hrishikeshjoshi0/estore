@@ -6,6 +6,8 @@ grails.project.target.level = 1.6
 grails.project.source.level = 1.6
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
+grails.plugin.location.'estore-dal' = "../estore_plugins/estore-dal"
+
 grails.project.dependency.resolution = {
 	// inherit Grails' default dependencies
 	inherits("global") {
@@ -49,5 +51,7 @@ grails.project.dependency.resolution = {
 		//runtime ":yui-minify-resources:0.1.4"
 
 		build ":tomcat:$grailsVersion"
+		
+		//compile ":estore-dal:0.1"
 	}
 }

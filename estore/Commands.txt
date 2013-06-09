@@ -1,0 +1,2 @@
+#Installing the DAL project plugin.
+install-plugin ../estore_plugins/estore-dal/grails-estore-dal-0.1.zip

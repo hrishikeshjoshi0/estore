@@ -1,4 +1,4 @@
-package com.estore.domain
+package com.estore.domain.product
 
 class Product {
 	

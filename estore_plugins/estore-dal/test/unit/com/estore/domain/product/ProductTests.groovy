@@ -1,8 +1,9 @@
-package com.estore.domain
+package com.estore.domain.product
 
 
 
 import grails.test.mixin.*
+
 import org.junit.*
 
 /**

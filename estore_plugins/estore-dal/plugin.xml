@@ -6,8 +6,8 @@
   <documentation>http://grails.org/plugin/estore-dal</documentation>
   <type>EstoreDalGrailsPlugin</type>
   <resources>
-    <resource>com.estore.domain.Product</resource>
     <resource>com.estore.domain.common.BaseDomainEntity</resource>
+    <resource>com.estore.domain.product.Product</resource>
   </resources>
   <repositories>
     <repository name='grailsCentral' url='http://grails.org/plugins' />
