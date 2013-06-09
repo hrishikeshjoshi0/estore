@@ -1,0 +1,15 @@
+#WishList for the first version of the E-Store (Based on the webstore)
+1. Modular/Customizable Home Page.
+2. Modular/Customizable Product Page.
+3. Different View for the Backend Applications.
+4. CMS Integration.
+5. Shared Domain Model.
+6. Backend App for managing Product information, hierarchies and pricing.
+7. Backend App for managing Product attributes.
+8. Product Compare.
+9. Product Review.
+10. Wishlist.
+11. E-Commerce Apps (To be elaborated).
+12. Backend App for managing the Product Images.
+13. SEO Friendly Urls for the products.
+
