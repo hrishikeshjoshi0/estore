@@ -1,0 +1,21 @@
+<plugin name='estore-dal' version='0.1' grailsVersion='2.1 &gt; *'>
+  <author>Your name</author>
+  <title>Estore Dal Plugin</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/estore-dal</documentation>
+  <type>EstoreDalGrailsPlugin</type>
+  <resources>
+    <resource>com.estore.domain.Product</resource>
+    <resource>com.estore.domain.common.BaseDomainEntity</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies />
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
